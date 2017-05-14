@@ -1,0 +1,22 @@
+.center{width:40%; height:40%; margin: 0 auto; background-color: #ccc;}
+.mensagens{
+   background-color: cadetblue;
+   height:400px;
+   overflow-y: scroll;
+   padding: 5px;
+}
+
+.inputs{
+    width:40%;
+    margin: 0 auto;
+    padding:5px;
+}
+
+.usuario{
+    width:85%;
+}
+
+textarea{
+    resize:none;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<title>
+Formulários
+</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Formulário</h1>
+
+
+<fieldset>
+<legend>
+Informações pessoais
+</legend>
+<form method="post" id="form-cadastro">
+
+
+Senha:<br>
+
+<input type="password" name="senha" maxlength="5"><br>
+<br>
+E-mail:<br>
+<input type="email" name="email" required autocomplete="on" formenctype="application/x-www-form-urlencoded" placeholder="seuemail@gmail.com">
+
+<input type="submit" value="Cadastrar" formenctype="application/x-www-form-urlencoded" formmethod="GET" formaction="cadastrar.php">
+<input type="submit" value="enviar-por-email"  formtarget="_blank" formethod="POST" formaction="enviar-email.php" formnovalidate>
+</form>
+
+</fieldset>
+
+
+Nome:<br>
+
+<input type="text" name="nome" form="form-cadastro">
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>O que posso fazer com JavaScript?</h1>
+
+<p id="demo">JavaScript pode mudar conteudo HTML.</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML='Olá JavaScript!'">
+	Clique em mim!
+</button>
+
+
+<h1>JavaScript Pode mudar Imagens</h1>
+
+<img id="minhaimagem" onclick="mudaImagem()" src="http://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+
+<p>Clique na lampada para acender ou desligar a luz.</p>
+
+<script>
+	function mudaImagem(){
+		var imagem = document.getElementById('minhaimagem');
+		if(imagem.src.match("bulbon")){
+			imagem.src="http://www.w3schools.com/js/pic_bulboff.gif";
+		}else{
+			imagem.src="http://www.w3schools.com/js/pic_bulbon.gif";
+		}
+	}
+
+
+</script>
+
+
+
+<p id="demonstracao">JavaScript pode mudar o estilo de um elemento HTML</p>
+<button type="button" onclick="minhaFuncao()">Clique em mim!</button>
+
+
+<script>
+function minhaFuncao(){
+		var x = document.getElementById("demonstracao");
+		x.style.fontSize = "25px";
+		x.style.color="red";
+}
+
+</script>
+
+
+
+
+<p>Por favor insira um numero entre 1 e 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="valida()">Enviar</button>
+
+<p id="validacao"></p>
+
+
+<script>
+
+function valida(){
+	var n, text;
+	n = document.getElementById("numb").value;
+
+	//não é um numero
+	if(isNaN(n) || n < 1 || n > 10){
+		text = "Valor inserido não válido";
+	}
+	else{
+		text = "Valor OK";
+	}
+
+	document.getElementById("validacao").innerHTML=text;
+}
+
+
+</script>
+</body>
+</html>

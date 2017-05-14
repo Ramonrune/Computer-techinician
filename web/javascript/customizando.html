@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p>Meu primeiro Javascript!</p>
+
+<p class="intro"> O DOM é muito util</p>
+<p class="intro">Esse exemplo mostra o método <b>getElementByTagName</b></p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<form id="frm1" action="form_action.asp">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<button onclick="myFunction()">Tente</button>
+
+<p id="demo3"></p>
+
+<script>
+var x = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 'O primeiro paragrafo (index 0) é: ' + x[0].innerHTML;
+
+var y = document.getElementsByClassName("intro");
+document.getElementById("demo1").innerHTML = 'O primeiro paragrafo (index 0) é:' + y[0].innerHTML;
+
+var z = document.querySelectorAll("p.intro");
+document.getElementById("demo2").innerHTML = 'O primeiro paragrafo (index 0) é:' + z[0].innerHTML;
+
+function myFunction(){
+	var x = document.forms["frm1"];
+	var text = "";
+	var i;
+	for (i=0; i < x.length; i++){
+		text+= x.elements[i].value + "<br>";
+	}
+
+	document.getElementById("demo3").innerHTML = text;
+}
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Thrown</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<p>Por favor, coloque um numero entre 5 e 10: </p>
+
+	<input id="demo" type="text">
+	<button type="button" onclick="minhaFuncao()">Teste</button>
+	<p id="mensagem"></p>
+
+	<script>
+		function minhaFuncao(){
+			var mensagem, x;
+			mensagem = document.getElementById("mensagem");
+			mensagem.innerHTML="";
+			x = document.getElementById("demo").value;
+			try{
+				if(x=="") throw "Vazio";
+				if(isNaN(x)) throw "Não é um numero";
+				x = Number(x);
+				if(x < 5) throw "Muito baixo";
+				if(x > 10) throw "Muito alto";
+			}
+			catch(erro){
+				mensagem.innerHTML = "O input está " + erro;
+			}
+		}
+
+	</script>
+</body>
+</html>
+
+

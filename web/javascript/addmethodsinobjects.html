@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+	<script type="text/javascript">
+		function pessoa(nome,idade){
+			this.nome = nome;
+			this.idade = idade;
+			this.moreYears = yearsMore;
+		
+		}
+		
+		function yearsMore(){
+			var numYears = 65 +this.idade;
+			return numYears;
+		}
+		
+		var pessoa1 = new pessoa("Pessoa1",28);
+		var pessoa2 = new pessoa("Pessoa2",24);
+	
+	</script>
+
+</head>
+
+
+<body>
+
+	<script type="text/javascript">
+	
+		document.write(pessoa1.moreYears() + "<br>");
+		document.write(pessoa2.moreYears());
+	
+	</script>
+
+</body>
+
+</html>

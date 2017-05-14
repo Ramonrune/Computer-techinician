@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>
+Métodos das strings
+</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+
+
+
+<script>
+
+var texto = "Olá mundo mundo mundo";
+var frutas  = "Maçã, Banana, Pera";
+var visitar = "Por favor, visite a Microsoft!";
+var nome = new String("Ramon");
+document.getElementById("demo").innerHTML=texto.length;
+document.getElementById("demo1").innerHTML = nome;
+document.getElementById("demo2").innerHTML = texto.indexOf("Olá");
+document.getElementById("demo3").innerHTML = texto.lastIndexOf("mundo");
+document.getElementById("demo4").innerHTML = texto.search("mundo");
+document.getElementById("demo5").innerHTML = frutas.slice(0,4) + "<br>" + frutas.substring(0,4);
+document.getElementById("demo6").innerHTML = visitar.replace("Microsoft","W3Schools");
+document.getElementById("demo7").innerHTML = texto.toUpperCase() + "<br>" + texto.toLowerCase();
+document.getElementById("demo8").innerHTML = texto.concat(" ",visitar);
+document.getElementById("demo9").innerHTML = texto.charAt(0) + "<br>" + texto.charCodeAt(0);
+
+
+
+
+</script>
+
+
+</body>
+</html>

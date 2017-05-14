@@ -1,0 +1,13 @@
+#conteudo{
+	background-color:red;
+	width:300px;
+	height:70px;
+	/*overflow:visible;*/
+	/*overflow:hidden;*/
+	/*overflow:scroll;*/
+	overflow:auto;
+}
+
+#conteudo p{
+	opacity:0.5;
+}
