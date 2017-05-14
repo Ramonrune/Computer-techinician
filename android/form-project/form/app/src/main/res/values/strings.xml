@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cadastro Cliente</string>
+    <string name="action_settingsNovo">Novo</string>
+    <string name="action_settingsMapa">Mapa</string>
+    <string name="action_settingsClass">Classificação</string>
+    <string name="title_activity_formulario">Formulario</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,3 @@
+Para fazer o login utilize o Usuário 'admin' e a senha 'admin' junto com o código gerado pelo sistema.
+Caso nenhuma informação do clima apareça , reinicie o programa ou cheque se o computador pode acessar 
+dados através do WEBService , pois os computadores do senai bloqueiam este tipo de serviço.

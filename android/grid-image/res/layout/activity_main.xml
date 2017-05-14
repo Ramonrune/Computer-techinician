@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:gravity="center"
+    android:background="@drawable/ironman">
+    
+    <GridLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/img00"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:padding="1dp"
+            android:src="@drawable/ironman100"
+            android:onClick="Verifica"/>
+        
+          <ImageView 
+            android:id="@+id/img01"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:padding="1dp"
+            android:src="@drawable/ironman100"
+            android:onClick="Verifica"/>
+        	
+            <ImageView 
+            android:id="@+id/img02"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:padding="1dp"
+            android:src="@drawable/ironman100"
+            android:onClick="Verifica"/>
+            
+            
+            
+             <ImageView 
+            android:id="@+id/img10"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:padding="1dp"
+            android:src="@drawable/ironman100"
+            android:onClick="Verifica"/>
+        
+          <ImageView 
+            android:id="@+id/img11"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:padding="1dp"
+            android:src="@drawable/ironman100"
+            android:onClick="Verifica"/>
+        	
+            <ImageView 
+            android:id="@+id/img12"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:padding="1dp"
+            android:src="@drawable/ironman100"
+            android:onClick="Verifica"/>
+        
+    </GridLayout>
+
+   
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Aplicacao</string>
+    <string name="hello_world"></string>
+    <string name="action_settings">Settings</string>
+    <string name="calcular">Calcular</string>
+    <string name="valor1">Valor 1 :</string>
+    <string name="valor2">Valor 2:</string>
+    <string name="valor3">Valor 3:</string>
+    <string name="notafinal">Nota Final:</string>
+    <string name="media">Media:</string>
+
+
+</resources>
