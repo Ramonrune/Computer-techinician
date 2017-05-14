@@ -1,0 +1,114 @@
+.calendar  * {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.calendar {
+    cursor: default;
+    width: 500px;
+    height: 300px;
+    position:absolute;
+}
+
+.calendar-sm .c-pad-top {
+    padding-top: 2%;
+}
+
+.calendar .c-pad-top {
+    padding-top: 3%;
+}
+
+.c-grid {
+    box-shadow: 2px 2px 5px #888888;
+    height: inherit;
+}
+.c-day {
+    width: 14.28%;
+    height: 13%;
+    background-color: #EFF4F9;
+    float: left;
+    text-align: center;
+}
+
+.c-day-previous-month {
+    width: 14.28%;
+    height: 13%;
+    background-color: #F9FBFD;
+    float: left;
+    text-align: center;
+    color: gray;
+}
+
+.c-day-next-month {
+    width: 14.28%;
+    height: 13%;
+    background-color: #F9FBFD;
+    float: left;
+    text-align: center;
+    color: gray;
+}
+
+.c-week-day {
+    width: 14.285%;
+    height: 10.38%;
+    	-moz-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+	background:#33363f;
+    color: white;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+.c-next {
+    width: 12.5%;
+    height: 12%;
+    padding: 2% 2% 0 2%;
+    text-align: right;
+    cursor: pointer;
+}
+
+.c-previous {
+    width: 12.5%;
+    height: 12%;
+    padding: 2% 2% 0 2%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.c-month {
+    width: 75%;
+    height: 12%;
+    text-align: center;
+}
+
+.c-nav-btn-over {
+    background-color: red !important;
+    font-weight: bold;
+}
+
+.c-today {
+	background:#33363f;
+    color:white;
+}
+
+
+
+.c-grid {
+    float: left;
+    width: 50%;
+}
+
+
+
+.c-grid-title {
+    font-weight: bold;
+    float: left;
+	background:#33363f;
+    color: white;
+}
+
+
